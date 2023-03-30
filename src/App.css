@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+.login-enter {
+  animation: enterLogin 200ms ease-in forwards;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.regis-enter {
+  animation: enterRegis 200ms ease-in forwards;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes enterLogin {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes enterRegis {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
